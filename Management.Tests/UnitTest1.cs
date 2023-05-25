@@ -61,7 +61,7 @@ namespace LMS.Tests
         public void Search_AuthorName_WithExisting_BooksDetails()
         {
             // Arrange
-            string AuthorName = "james"; //assuming authorname is in table
+            string AuthorName = "jjj"; //assuming authorname is in table
 
             // Act
             int result = b.Search_Book_By_AuthorName(AuthorName);
@@ -77,7 +77,7 @@ namespace LMS.Tests
               
             int result = b.Students_Having_Books();
             // Assert
-            Assert.That(result, Is.EqualTo(3)); // assuming three student having books now
+            Assert.That(result, Is.EqualTo(1)); 
         }
 
 

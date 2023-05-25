@@ -287,7 +287,7 @@ namespace LibraryManagementSystem
                 DataRow[] rows = ds.Tables["Issued_Books"].Select($"Student_RollNo IS NOT NULL");
                 int count = rows.Length;
                 Console.WriteLine($"Total students with books: {count}");
-                Console.WriteLine("Issue_Id | Issue_book | Student_RollNo | Issue_Book_Date");
+                Console.WriteLine("Issue_Id | Book_Id | Student_RollNo | Issue_Book_Date");
                 if (rows.Length > 0)
                 {                  
                     foreach (DataRow row in rows)
